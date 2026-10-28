@@ -1,0 +1,72 @@
+# ==============================================================================
+# VMFRAM SHOWCASE REPOSITORY .GITIGNORE
+# ==============================================================================
+# Protects your showcase repository from any accidental source code or model leak.
+# Only documents, markdown files, and visual media are tracked.
+# ==============================================================================
+
+# Ignore all source code files by default
+*.cs
+*.csproj
+*.sln
+*.slnx
+*.py
+*.pyw
+*.ipynb
+*.spec
+*.ts
+*.tsx
+*.jsx
+*.js
+*.sql
+*.mdf
+*.ldf
+
+# Ignore binary models and large neural weights
+*.onnx
+*.pt
+*.pth
+*.tflite
+*.h5
+*.weights
+*.bin
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore build artifacts & runtimes
+**/bin/
+**/obj/
+**/dist/
+**/build/
+**/node_modules/
+__pycache__/
+*.dll
+*.exe
+*.so
+
+# Ignore credentials, local configs and environment
+*.env
+*.env.*
+appsettings*.json
+*secret*
+*credential*
+
+# OS and IDE files
+.vs/
+.vscode/
+.claude/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Explicitly whitelist showcase docs & assets
+!README.md
+!COMMERCIAL_LICENSE.md
+!LICENSE
+!LICENSE.md
+!assets/
+!assets/**
+!docs/
+!docs/**
+
